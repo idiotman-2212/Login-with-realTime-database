@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1069330361087",
+    "firebase_url": "https://login-with-realtime-data-17972-default-rtdb.firebaseio.com",
+    "project_id": "login-with-realtime-data-17972",
+    "storage_bucket": "login-with-realtime-data-17972.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069330361087:android:80e6ff975f32a65798faca",
+        "android_client_info": {
+          "package_name": "com.chahuydien.bt_giuaky_realtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069330361087-joaj83mbnd2hth2b5eitfgsgmbdodrh8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chahuydien.bt_giuaky_realtimedatabase",
+            "certificate_hash": "3a4f13f9aaced9b5c38e2ae2a9716430feed0346"
+          }
+        },
+        {
+          "client_id": "1069330361087-rt3khusigvll1m37rmk0hcdbrqoe2t2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0fZ9Lb6oesrzN3BkWUTl4SqaHwM6UbSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069330361087-rt3khusigvll1m37rmk0hcdbrqoe2t2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

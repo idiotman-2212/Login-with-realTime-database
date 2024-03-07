@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+   >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher_foreground" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/wave" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Wait for the code I sent You"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/design_default_color_primary" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewWait"
+            android:layout_alignEnd="@+id/textViewWait"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="121dp" />
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_below="@id/progressBar"
+            android:layout_alignStart="@+id/textViewWait"
+            android:layout_alignEnd="@+id/textViewWait"
+            android:layout_marginStart="-24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="-27dp"
+            android:background="@drawable/input_bg"
+            android:digits="0123456789"
+            android:drawableLeft="@android:drawable/stat_notify_chat"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter verification code"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingLeft="20dp" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="124dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/textViewSendAgain"
+            android:layout_alignStart="@+id/textViewSendAgain"
+            android:layout_alignEnd="@+id/textViewSendAgain"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/btn_bg"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewSendAgain"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCode"
+            android:layout_alignStart="@+id/editTextCode"
+            android:layout_alignEnd="@+id/editTextCode"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="63dp"
+            android:text="I didn't recieved code. Send again"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

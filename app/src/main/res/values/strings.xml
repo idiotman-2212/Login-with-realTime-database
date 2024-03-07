@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BT_GiuaKy</string>
+    <string name="default_web_client_id">YOUR_MOBILESDK_APP_ID</string>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+</resources>

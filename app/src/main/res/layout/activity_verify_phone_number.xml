@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_launcher_foreground" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/wave" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="May I ask your phone number?"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/design_default_color_primary" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="1dp"
+            android:layout_toStartOf="@+id/editTextPhone"
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="285dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="-16dp"
+            android:background="@drawable/input_bg"
+            android:digits="0123456789"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter your mobile number"
+            android:inputType="number"
+            android:paddingLeft="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="137dp" />
+
+        <Button
+            android:id="@+id/btnSendCode"
+            android:layout_width="151dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignStart="@+id/countryCodePicker"
+            android:layout_alignEnd="@+id/editTextPhone"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="104dp"
+            android:background="@drawable/btn_bg"
+            android:text="Send Code"
+            android:textAllCaps="false"
+            android:textColor="#cdd8f1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
